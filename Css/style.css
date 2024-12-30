@@ -267,23 +267,6 @@ ul{
     left:0;
 }
 
-@media(max-width:767px){
-    .header .logo{
-        width:100%;
-        height: 40px;
-        margin-top: 5px;
-    }
-
-    .header .nav{
-        margin:auto;
-    }
-
-    .header .nav >li >a{
-        padding:10px;
-        font-size:14px;
-
-    }
-}
 
 
 /* #################################### start mega-menu  ################################# */
@@ -381,16 +364,6 @@ z-index: -1;
 
 }
 
-@media(max-width:767px){
-    .header .nav li .mega-menu .im{
-        display: none;
-
-    }
-    .header .nav li .mega-menu .links li a{
-        font-size: 14px;
-    }
-
-}
 
     
 
@@ -491,16 +464,7 @@ z-index: -1;
 
 }
 
-@media(max-width:767px){
-    .landing .text p{
-        text-align: center;
-        
-    }
 
-    .landing .image i{
-        bottom: -150px;
-    }
-}
 
 /* ###################### end landing ########################## */
 
@@ -1320,12 +1284,7 @@ z-index: -1;
     left: 30px;
 }
 
-@media(max-width:1000px){
-    .events::before,
-    .events::after{
-        display:none;
-    }
-}
+
 
 .events .container {
         display:grid;
@@ -1474,12 +1433,7 @@ z-index: -1;
     left: 20px;
 }
 
-@media(max-width:1000px){
-    .subscribe::before,
-    .subscribe::after{
-        display:none;
-    }
-}
+
 
 .subscribe .container{
     display:grid;
@@ -1763,12 +1717,7 @@ z-index: -1;
     }
 
     
-    @media(max-width:767px){
-        .video .container{
-            flex-direction:column;
-            gap:0;
-        }
-    }
+
 /* ################################### end video section ############################# */
 
 
@@ -2097,7 +2046,85 @@ z-index: -1;
     }
 /* ################################### end footer ############################# */
 
+/* ################################### start scroll-up ############################# */
+
+    .scroll-up{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:fixed !important;
+        bottom:20px;
+        right:20px;
+        background-color: #313131;
+        color:white;
+        width:40px;
+        height: 50px;
+        box-shadow: var(--shadow);
+        border-radius: 10%;
+        transition: var(--transition);
+    }
+
+    .scroll-up i{
+        font-size: 20px;
+    }
+
+    .scroll-up:hover{
+        color:var(--main-color)
+    }
+
+/* ################################### end scroll-up ############################# */
 
 
+/* ################################### start media ############################# */
 
 
+@media(max-width:767px){
+    .header .logo{
+        width:100%;
+        height: 40px;
+        margin-top: 5px;
+    }
+
+    .header .nav{
+        margin:auto;
+    }
+
+    .header .nav >li >a{
+        padding:10px;
+        font-size:14px;
+
+    }
+    .header .nav li .mega-menu .im{
+        display: none;
+
+    }
+    .header .nav li .mega-menu .links li a{
+        font-size: 14px;
+    }
+    .video .container{
+        flex-direction:column;
+        gap:0;
+    }
+    .landing .text p{
+        text-align: center;
+        
+    }
+
+    .landing .image i{
+        bottom: -150px;
+    }
+    
+}
+
+@media(max-width:1000px){
+    .events::before,
+    .events::after{
+        display:none;
+    }
+    .subscribe::before,
+    .subscribe::after{
+        display:none;
+    }
+}
+
+/* ################################### end media ############################# */
